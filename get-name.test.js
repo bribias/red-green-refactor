@@ -8,4 +8,12 @@ describe('getName', () => {
 
     expect(actual).toEqual(expected);
   });
+
+  it('gets name from an oject with a name key [character]', () => {
+    const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+    const expected = 'Aang';
+    const actual = getName(character); // returns Aang
+
+    expect(actual).toEqual(expected);
+  });
 });
