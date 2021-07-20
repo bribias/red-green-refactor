@@ -1,5 +1,5 @@
-const getName = (object) => {
-  return object.name;
+const getName = ({ name }) => {
+  return name;
 };
 
 export default getName;
